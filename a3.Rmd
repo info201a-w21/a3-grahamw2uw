@@ -1,0 +1,72 @@
+---
+title: "Assignment 3"
+output: html_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r message=FALSE}
+source("code_execution.R")
+```
+
+# Introduction
+
+The incarceration data gives valuable insight into the extreme exemplification
+of racism that is the US prison system. I first calculated the mean proportion
+of black inmates in the US prison system in 2018, which was calculated as
+`r prop_black_inmates_2018`. This proportion is disturbingly high given the
+actual percentage of black people within the total US population. The state with
+the highest proportion of black inmates is `r state_highest_black_prop_2018`,
+or Mississippi, with a proportion of `r highest_black_prop_overall`, which is
+not exactly surprising as the South has existing legislature to hurt minorities.
+The significant inequality increases throughout the years, with the year with
+the highest proportion being `r highest_black_prop_overall_year`. In NY County,
+the number of black inmates is incredibly disturbing, at a calculated total of
+`r highest_number_of_black_inmates_2018` people.
+
+
+```{r message=FALSE}
+source("code_execution.R")
+change_in_percentage_by_year
+```
+
+## Basic Plot
+
+I included this plot to investigate the change in racial proportions of inmates 
+over time. From 1991 to 2018, the proportion of white inmates saw a steady
+decline, whereas that of black inmates saw a steady increase. This is likely due
+to crime bills passed in 1986 and 1994 (both crafted by our current President).
+The blatant disparity in drug related crimes, used to target black communities
+and other oppressed minorites, is shown clearly in the data. Even with recent
+"significant" reform to our racially rooted punishments, there had been little
+adjustment in the percentages.
+
+```{r message=FALSE}
+source("code_execution.R")
+private_vs_public_bar_chart
+```
+
+## Bar Chart
+
+I included this bar chart to investigate for-profit, private prisons in the US
+and their relation to racial manipulation. The relation is very clear, as
+private prisons consistently show a higher proportion of black inmates. This
+shows convincing evidence of modernized slavery in the US prison system. All
+years included show a significantly higher proportion, indicating that black
+people in America are more likely to be incarcerated for gains in underpaid
+labor.
+
+```{r message=FALSE}
+source("code_execution.R")
+percentage_black_illinois_map
+```
+
+## Map
+
+This map shows the proportion of black inmates across the state of Illinois.
+The highest proportions exist in the areas surrounding Chicago and St. Louis.
+This is consistent with intuition, as urbanity of areas is directly proportional
+to racial disparity in education and resources, forcing a higher proportion
+of an oppressed population into crime. Police departments in urban areas are
+also much more likely to pursue oppressed races/populations.
